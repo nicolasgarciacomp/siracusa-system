@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Siracusa :: Pizzeria</title>
+    <link rel="icon" href="assets/img/icono.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/lista-precios.css">
+  </head>
+  <body class="top-fixed" style="background-image:url(assets/img/fondo_07.jpg)">
+    <header>
+      <!-- Image and text -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/icono.jpg" width="30" height="30" class="d-inline-block align-top" alt="Simbolo Siracusa">
+          Siracusa - La Pizza a Legna
+        </a>
+      </nav>
+    </header>
+    <form action="#" method="POST" id="formulario" onsubmit="return false;">
+      <br>
+      <fieldset>
+        <br>
+        <div class="boxPrecios" id="boxPrecios">
+          <input button type="button" class="btn btn-dark" value="Finalizar ventas" id="finalizar"><br><br>
+          <table class="ventas" id="tablaFinal">
+          <tr>
+          <th>ID Venta</th>
+          <th>Cantidad</th>
+          <th>Producto</th>
+          <th>Monto</th>
+          </tr>
+          </table>
+        </div>
+      </fieldset>
+    </form>
+    <footer>
+      <p><span>© </span><span>2019 Siracusa </span>All Right Reserved.</p>
+    </footer>
+    <script src="assets/js/ventas.js"></script>
+  </body>
+</html>

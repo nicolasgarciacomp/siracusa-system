@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Siracusa :: Pizzeria</title>
+    <link rel="icon" href="assets/img/icono.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/pedido.css">
+  </head>
+  <body class="top-fixed" style="background-image:url(assets/img/fondo_07.jpg)">
+    <header>
+      <!-- Image and text -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/icono.jpg" width="30" height="30" class="d-inline-block align-top" alt="Simbolo Siracusa">
+          Siracusa - La Pizza a Legna
+        </a>
+      </nav>
+    </header>
+    <form action="#" method="POST" id="formulario" onsubmit="return false;">
+      <br>
+      <fieldset>
+          <br>
+          <div class="box" id="box">
+            <h6>Detalle del pedido:</h6>
+            <hr>
+          </div>
+          Para:<br>
+          <input type="text" name="para" id="para"><br><br>
+          Seleccione Producto:<br>
+          <select name="producto" class="producto" id="producto">
+            <option value="PIZZAS" class="PIZZAS" id="PIZZAS">PIZZAS</option> 
+            <option value="LOMOS" class="LOMOS" id="LOMOS">LOMOS</option>
+            <option value="HAMBURGUESAS" class="HAMBURGUESAS" id="HAMBURGUESAS">HAMBURGUESAS</option>
+          </select><br><br>
+          Seleccione Variedad:<br>
+          <select name="variedad" id="variedad"> 
+          </select>
+          <select name="tipo_pizza" id="tipo_pizza">
+            <option value="ENTERA">ENTERA</option> 
+            <option value="MEDIA">MEDIA</option>
+          </select><br><br>
+          Cantidad:<br>
+          <input type="text" name="cantidad" id="cantidad"><br><br>
+          Costo de envio:<br>
+          <select name="costo_envio" id="costo_envio">
+            <option value=0>$0</option> 
+            <option value=20>$20</option> 
+            <option value=25>$25</option>
+            <option value=30>$30</option> 
+            <option value=35>$35</option>
+            <option value=40>$40</option> 
+            <option value=45>$45</option>
+            <option value=50>$50</option>
+          </select><br><br>
+          Comentarios:<br>
+          <input type="text" name="comentarios" id="comentarios"><br><br>
+          <input button type="button" class="btn btn-dark" value="Añadir" id="añadir">
+          <input button type="button" class="btn btn-dark" value="Deshacer" id="deshacer">
+          <input button type="button" class="btn btn-dark" value="Total" id="total"><br><br>
+          <input button type="button" class="btn btn-dark" value="Confirmar venta" id="confirmar">
+          <input button type="button" class="btn btn-dark" value="Imprimir ticket" id="imprimir"><br><br>
+      </fieldset>
+      <table id="tabla">
+      <tr>
+      </tr>
+      </table>
+      <table id="tablaFinal">
+      <tr>
+        <th>ID Venta</th>
+        <th>Cantidad</th>
+        <th>Producto</th>
+        <th>Monto</th>
+      </tr>
+      </table>
+    </form>
+    <footer>
+      <p><span>© </span><span>2019 Siracusa </span>All Right Reserved.</p>
+    </footer>
+    <script src="assets/js/objetos.js"></script>
+  </body>
+</html>
